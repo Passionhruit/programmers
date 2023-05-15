@@ -1,3 +1,8 @@
+const solution = (str) => {
+    return str.split("x").map(v => v.length)
+}
+
+/*
 function solution(myString) {
     var answer = [];
     var sum = 0;
@@ -12,3 +17,4 @@ function solution(myString) {
     answer.push(sum)
     return answer
 }
+*/
