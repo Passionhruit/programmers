@@ -1,14 +1,13 @@
 function solution(numLog) {
-    var answer = [];
-    for(i = 1; i < numLog.length; i++) {
-        if(numLog[i]-numLog[i-1] === 1) {
-            answer.push("w")
-        }else if(numLog[i]-numLog[i-1] === -1) {
-            answer.push("s")
-        }else if(numLog[i]-numLog[i-1] === 10) {
-            answer.push("d")
-        }else {
-            answer.push("a")
-        }
-    } return answer.join("")
+    var answer = []
+    let num = {
+        "1" : "w",
+        "-1" : "s",
+        "10" : "d",
+        "-10" : "a",
+    }
+    for(i = 0; i < numLog.length; i++) {
+        answer.push(num[numLog[i+1]-numLog[i]]);
+    }
+    return answer.join("")
 }
