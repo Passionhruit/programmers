@@ -7,9 +7,3 @@ function solution(my_string, queries) {
     }
     return my_string;
 }
-
-
-
-
-
-
