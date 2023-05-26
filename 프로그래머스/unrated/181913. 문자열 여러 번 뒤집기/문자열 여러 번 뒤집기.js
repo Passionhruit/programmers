@@ -3,7 +3,7 @@ function solution(my_string, queries) {
         var [s,e] = queries[i]
         var part = my_string.slice(s,e+1)
         var reversed = [...part].reverse().join("")
-        my_string = my_string.slice(0,s) + reversed + my_string.slice(e+1,my_string.length)
+        my_string = my_string.substring(0,s) + reversed + my_string.substring(e+1)
     }
     return my_string;
 }
