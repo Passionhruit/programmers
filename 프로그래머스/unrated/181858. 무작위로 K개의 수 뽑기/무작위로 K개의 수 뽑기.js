@@ -1,8 +1,8 @@
 function solution(arr, k) {
     var array = [...new Set(arr)].slice(0,k)
-    var answer = []
-    for(i = 0; i < k - array.length; i++) {
-        answer.push(-1)
+    var num = k - array.length;
+    for(i = 0; i < num; i++) {
+        array.push(-1)
     }
-    return [...array, ...answer]
+    return array;
 }
