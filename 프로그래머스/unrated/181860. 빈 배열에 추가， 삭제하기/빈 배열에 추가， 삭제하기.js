@@ -1,13 +1,12 @@
 function solution(arr, flag) {
-    var X = [];
-    for(i = 0; i < flag.length; i++) {
-        if (flag[i]) {
-            for(j = 0; j < arr[i]*2; j++) {
-                X.push(arr[i])
+    var answer = [];
+    for(i = 0; i < arr.length; i++) {
+        if(flag[i]) {
+            for(j= 0; j < arr[i]*2; j++) {
+                answer.push(arr[i])
             }
         }else {
-            X.splice(-arr[i])
+            answer.splice(answer.length-arr[i])
         }
-    }
-    return X;
+    } return answer
 }
