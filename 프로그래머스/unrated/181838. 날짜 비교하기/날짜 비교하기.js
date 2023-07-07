@@ -1,9 +1,17 @@
 function solution(d1, d2) {
-    for(i = 0; i < 3; i++) {
-        if(d1[i] < d2[i]) {
-            return 1
-        }else if(d1[i] > d2[i]) {
-            return 0
-        }
-    } return 0
+    if(d1[0] > d2[0]) {
+        return 0
+    }else if (d1[0] < d2[0]) {
+        return 1
+    }else if (d1[1] > d2[1]) {
+        return 0
+    }else if (d1[1] < d2[1]) {
+        return 1
+    }else if (d1[2] > d2[2]) {
+        return 0
+    }else if (d1[2] < d2[2]){
+        return 1 
+    }else {
+        return 0
+    }
 }
