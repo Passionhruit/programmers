@@ -4,5 +4,5 @@ function solution(num, k) {
         if(array[i] == k) {
             return i+1
         }
-    } return -1
+    } return -1;
 }
