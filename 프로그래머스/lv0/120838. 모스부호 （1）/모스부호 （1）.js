@@ -7,8 +7,9 @@ function solution(letter) {
     '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
     '-.--':'y','--..':'z'
     }
-    letter = letter.split(" ");
-    for (i = 0; i < letter.length; i++) {
+    letter = letter.split(" ")
+    for(i=0; i<letter.length; i++){
         answer = answer + morse[letter[i]]
-    } return answer
+    }
+    return answer
 }
