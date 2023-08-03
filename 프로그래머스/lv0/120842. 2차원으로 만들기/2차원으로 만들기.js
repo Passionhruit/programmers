@@ -1,6 +1,8 @@
 function solution(num_list, n) {
-    var array = [];
-    for(i = 0; i < num_list.length;) {
+    let array = []
+    for(i=0; i <num_list.length; i++) {
         array.push(num_list.splice(i,n))
-    } return array;
+        i = i - 1
+    }
+    return array
 }
