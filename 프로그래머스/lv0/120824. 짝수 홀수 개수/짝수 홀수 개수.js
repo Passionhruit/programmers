@@ -1,6 +1,6 @@
 function solution(num_list) {
-    let array = [0,0]
-    num_list.map((v) => v%2==0 ? array[0]+=1 : array[1]+=1)
-    return array;
+    let even = num_list.filter((v) => v % 2 === 0).length
+    let odd = num_list.length - even
+    return [even,odd]
 }
 
