@@ -1,8 +1,5 @@
 function solution(s) {
-    const newArr = s.split(" ")
-    const numArr = newArr.map((v) => v.includes("-") ? -v.slice(1)  : +v)
-    const sortedArr = numArr.sort((a,b) => a - b)
-    return sortedArr[0] + " " + sortedArr[sortedArr.length-1] 
-    
-    
+    var array = s.split(" ");
+    array.sort((a,b) => a - b);
+    return `${array[0]}` + " " + `${array[array.length-1]}`
 }
