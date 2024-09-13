@@ -1,5 +1,5 @@
 function solution(s) {
-    var array = s.split(" ");
-    array.sort((a,b) => a - b);
-    return `${array[0]}` + " " + `${array[array.length-1]}`
+    const newArr = s.split(" ")
+    const sortedArr = newArr.sort((a,b) => a - b)
+    return sortedArr[0] + " " + sortedArr[sortedArr.length-1] 
 }
